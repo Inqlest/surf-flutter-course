@@ -1,5 +1,33 @@
-import 'package:surf_dart_courses_template/surf_dart_courses_template.dart' as surf_dart_courses_template;
+// подготовка к сессии
+void main(){
+  while( true ){
+    if(ничего не знаешь по предмету){
+      if(не готовился){
+        плакать();
+      } else {
+        посмотреть билеты();
+        написать ответы на вопросы();
+        выбрать билеты();
+      }
 
-void main(List<String> arguments) {
-  print('Hello world: ${surf_dart_courses_template.calculate()}!');
+      готовиться();
+    } else {
+      continue;
+    }
+
+  }
+}
+
+void выбрать билеты() {
+  switch (уровень готовности) {
+    case вообще пусто:
+      плакать();
+      break;
+    case уверенно знаешь:
+      выучить все билеты();
+      break;
+    case немного знаешь:
+      выучить хотя бы половину();
+      break;
+  }
 }
